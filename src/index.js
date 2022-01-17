@@ -70,58 +70,7 @@ var EMAILInitialization = {
                 },
                 settingsId: 'stripoSettingsContainer',
                 previewId: 'stripoPreviewContainer',
-                codeEditorButtonId: 'codeEditor',
-                "blockConfiguration": {
-                    "enabled": `${(usercontext.contentTypeId !== usercontext.customblock.contenttypeuuid ? true : false)}`,
-                    "groups": await loadContentBlocksGroup()
-                },
-                "mergeTags": [
-                    {
-                        "category": "Program",
-                        "entries": [
-                            {
-                                "label": "Program Phone",
-                                "value": "*|PPhone|*"
-                            },
-                            {
-                                "label": "Program Name",
-                                "value": "*|PName|*"
-                            },
-                            {
-                                "label": "International Phone (if any)",
-                                "value": "*|IPhone|*"
-                            },
-                            {
-                                "label": "Trip ID",
-                                "value": "*|TripID|*"
-                            },
-                            {
-                                "label": "Dynamic hyperlinks : ClickAway link",
-                                "value": "*|DHyperLink|*"
-                            },
-                            {
-                                "label": "Terms and condition link (tclink as Merged tag)",
-                                "value": "*|T&C|*"
-                            }
-                            , {
-                                "label": "Mytrips link",
-                                "value": "*|MyTripsLink|*"
-                            }
-                            , {
-                                "label": "BillingAddress (AirCanada specific)",
-                                "value": "*|BillingAddr|*"
-                            }
-                            , {
-                                "label": "Invoice Number (AirCanada specific)",
-                                "value": "*|InvNum|*"
-                            }
-                            , {
-                                "label": "Take Our Survey (Button with a dynamic hyperlink)",
-                                "value": "*|TakeSurvey|*"
-                            }
-                        ]
-                    }
-                ],
+                codeEditorButtonId: 'codeEditor',              
                 locale: Configuration.Stripo.StripoLocalization,
                 html: template.html,
                 css: template.css,
