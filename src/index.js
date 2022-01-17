@@ -71,12 +71,6 @@ var EMAILInitialization = {
                 settingsId: 'stripoSettingsContainer',
                 previewId: 'stripoPreviewContainer',
                 codeEditorButtonId: 'codeEditor',
-                extensions: [
-                    {
-                        globalName: "CustomBlockExtension",
-                        url: "EXTENSION URL REQUIRED"
-                    }
-                ],
                 "blockConfiguration": {
                     "enabled": `${(usercontext.contentTypeId !== usercontext.customblock.contenttypeuuid ? true : false)}`,
                     "groups": await loadContentBlocksGroup()
